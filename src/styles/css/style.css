@@ -15,4 +15,87 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  padding: 3rem; }
+  color: #333; }
+
+.heading-primary {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #fff; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right, #232526, #414345);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.5rem;
+  width: 100vw;
+  padding: 0 10vw;
+  color: #000;
+  z-index: 1;
+  transition: all .3s; }
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase; }
+  .navbar .nav__links {
+    display: flex;
+    list-style: none; }
+    .navbar .nav__links--link a {
+      margin: .2rem;
+      padding: 1rem 2.5rem; }
+      .navbar .nav__links--link a:hover {
+        background: rgba(255, 255, 255, 0.2); }
+  .navbar .menu__icon {
+    position: relative;
+    padding: 2.6rem 1rem;
+    cursor: pointer;
+    z-index: 1;
+    display: none; }
+    .navbar .menu__icon-line {
+      display: block;
+      position: relative;
+      background: #fff;
+      height: .2rem;
+      width: 2rem;
+      border-radius: .4rem;
+      transition: background .8s ease; }
+      .navbar .menu__icon-line::before, .navbar .menu__icon-line::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: .4rem;
+        background: #fff;
+        transition: background .8s ease; }
+      .navbar .menu__icon-line::before {
+        transform: translateY(-0.5rem); }
+      .navbar .menu__icon-line::after {
+        transform: translateY(0.5rem); }
+  .navbar .menu__btn {
+    display: none; }
+  .navbar.scrolled {
+    height: 5.5rem;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .navbar.scrolled .menu__icon__line, .navbar.scrolled .menu__icon__line::before, .navbar.scrolled .menu__icon__line::after {
+      background: #fff; }
+
+.section-introduction {
+  padding: 25rem 0;
+  margin-top: -20vh; }

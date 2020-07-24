@@ -1,0 +1,90 @@
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.5rem;
+    width: 100vw;
+    padding: 0 10vw;
+    color: #000;
+    z-index: 1;
+    transition: all .3s;
+
+    a {
+        text-decoration: none;
+        color: $color-white;
+        text-transform: uppercase;
+    }
+
+    .nav__links {
+        display: flex;
+        list-style: none;
+
+        &--link {
+            a {
+                margin: .2rem;
+                padding: 1rem 2.5rem;
+
+                &:hover {
+                    background: rgba(255, 255, 255, 0.2)
+                }
+            }
+        }
+    }
+
+    .menu__icon {
+        position: relative;
+        padding: 2.6rem 1rem;
+        cursor: pointer;
+        z-index: 1;
+        display: none;
+
+        &-line {
+            display: block;
+            position: relative;
+            background: $color-white;
+            height: .2rem;
+            width: 2rem;
+            border-radius: .4rem;
+            transition: background .8s ease;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                border-radius: .4rem;
+                background: $color-white;
+                transition: background .8s ease;
+            }
+
+            &::before {
+                transform: translateY(-.5rem);
+            }
+
+            &::after {
+                transform: translateY(.5rem);
+            }
+        }
+    }
+
+    .menu__btn {
+        display: none;
+    }
+
+    &.scrolled {
+        height: 5.5rem;
+        background: rgba($color-black, 0.7);
+        color: $color-white;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        .menu__icon {
+            &__line,
+            &__line::before,
+            &__line::after {
+                background: $color-white;
+            }
+        }
+    }
+}
