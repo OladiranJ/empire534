@@ -37,7 +37,7 @@
         padding: 2.6rem 1rem;
         cursor: pointer;
         z-index: 1;
-        display: none;
+        // display: none;
 
         &-line {
             display: block;
@@ -46,7 +46,7 @@
             height: .2rem;
             width: 2rem;
             border-radius: .4rem;
-            transition: background .8s ease;
+            transition: background .8s ease-in-out;
 
             &::before,
             &::after {

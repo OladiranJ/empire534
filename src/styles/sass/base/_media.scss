@@ -1,0 +1,37 @@
+// Responsive Adjustments
+
+
+@media screen and (max-width: 767px) {      // iPad Screen
+
+    .navbar {
+        .menu__icon {
+            display: block;
+        }
+
+        .nav__links {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 10rem 0;
+            width: 100vw;
+            height: 100vh;
+            font-size: 3rem;
+            color: $color-white;
+            background: rgba($color-black, .95);
+
+            transition: opacity .8s .5s, clip-path 1s .5s;
+
+            clip-path: polygon(75% 0, 100% 0, 100% 25%, 75% 25%);
+        }
+
+        .menu__btn:checked ~ .nav__links {
+            opacity: 1;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+    }
+
+}

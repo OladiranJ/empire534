@@ -11,6 +11,29 @@ html {
 body {
   box-sizing: border-box; }
 
+@media screen and (max-width: 767px) {
+  .navbar .menu__icon {
+    display: block; }
+  .navbar .nav__links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10rem 0;
+    width: 100vw;
+    height: 100vh;
+    font-size: 3rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.95);
+    transition: opacity .8s .5s, clip-path 1s .5s;
+    clip-path: polygon(75% 0, 100% 0, 100% 25%, 75% 25%); }
+  .navbar .menu__btn:checked ~ .nav__links {
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -64,8 +87,7 @@ body {
     position: relative;
     padding: 2.6rem 1rem;
     cursor: pointer;
-    z-index: 1;
-    display: none; }
+    z-index: 1; }
     .navbar .menu__icon-line {
       display: block;
       position: relative;
@@ -73,7 +95,7 @@ body {
       height: .2rem;
       width: 2rem;
       border-radius: .4rem;
-      transition: background .8s ease; }
+      transition: background .8s ease-in-out; }
       .navbar .menu__icon-line::before, .navbar .menu__icon-line::after {
         content: "";
         position: absolute;
