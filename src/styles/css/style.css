@@ -42,16 +42,17 @@
         transition-delay: .3s; }
       .navbar .nav__links--link a {
         margin: .2rem;
-        padding: 1rem 2.5rem; }
+        padding: 1rem 2.5rem;
+        transition: all .3s ease-in-out; }
         .navbar .nav__links--link a:hover {
           background: rgba(255, 255, 255, 0.2); }
       .navbar .nav__links--link-1:hover ul {
-        display: block; }
+        display: block;
+        background: rgba(0, 0, 0, 0.85); }
     .navbar .nav__links .dropdown {
       display: none;
       list-style: none;
       position: absolute;
-      background: rgba(0, 0, 0, 0.85);
       margin-top: .8rem;
       padding-left: .38rem;
       padding-right: .38rem; }

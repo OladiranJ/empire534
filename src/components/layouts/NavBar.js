@@ -52,10 +52,10 @@ class Navbar extends Component {
                 </label>
     
                 <ul className="nav__links">
-                    <li className="nav__links--link nav__links--link-1"><a href="#">About</a>
+                    <li className="nav__links--link nav__links--link-1"><a href="#">About &#xbb;</a>
                         <ul className="dropdown">
-                            <li className="dropdown__link"><a href="">Testimonials</a></li>
-                            <li className="dropdown__link"><a href="">FAQs</a></li>
+                            <li className="dropdown__link"><a href="#">Testimonials</a></li>
+                            <li className="dropdown__link"><a href="#">FAQs</a></li>
                         </ul>
                     </li>
                     <li className="nav__links--link"><a href="#">Contact Us</a></li>

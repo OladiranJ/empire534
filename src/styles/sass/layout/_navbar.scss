@@ -37,6 +37,7 @@
             a {
                 margin: .2rem;
                 padding: 1rem 2.5rem;
+                transition: all .3s ease-in-out;
 
                 &:hover {
                     background: rgba(255, 255, 255, 0.2)
@@ -45,6 +46,7 @@
 
             &-1:hover ul {
                 display: block;
+                background: rgba($color-black, 0.85);
             }
         }
 
@@ -52,7 +54,6 @@
             display: none;
             list-style: none;
             position: absolute;
-            background: rgba($color-black, 0.85);
             margin-top: .8rem;
             padding-left: .38rem;
             padding-right: .38rem;
