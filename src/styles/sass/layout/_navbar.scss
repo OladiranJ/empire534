@@ -10,7 +10,8 @@
     z-index: 1;
     transition: all .3s;
 
-    a {
+    a, 
+    label {
         text-decoration: none;
         color: $color-white;
         text-transform: uppercase;
@@ -34,7 +35,8 @@
                 transition-delay: .3s;
             }
 
-            a {
+            a,
+            label {
                 margin: .2rem;
                 padding: 1rem 2.5rem;
                 transition: all .3s ease-in-out;
@@ -48,21 +50,23 @@
                 display: block;
                 background: rgba($color-black, 0.85);
             }
-        }
 
-        .dropdown {
-            display: none;
-            list-style: none;
-            position: absolute;
-            margin-top: .8rem;
-            padding-left: .38rem;
-            padding-right: .38rem;
-
-            &__link {
-                padding: 1.5rem 0;
-                text-align: center;
+            .dropdown {
+                display: none;
+                list-style: none;
+                position: absolute;
+                margin-top: .8rem;
+                padding-left: .38rem;
+                padding-right: .38rem;
+    
+                &__link {
+                    margin-top: 2.5rem;
+                    padding: 1.5rem 0;
+                    text-align: center;
+                }
             }
         }
+
     }
 
     .menu__icon {
@@ -102,7 +106,8 @@
         }
     }
 
-    .menu__btn {
+    .menu__btn,
+    .about__btn {
         display: none;
     }
 
