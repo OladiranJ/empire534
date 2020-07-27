@@ -69,3 +69,17 @@
         transform: translateY(0px) rotate(90deg);
     }
 }
+
+
+// Dropdown Menu Animations
+
+@keyframes smoothAppear {
+    0% {
+        transform: translateY(5px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

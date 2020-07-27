@@ -46,7 +46,9 @@
                 }
             }
 
+            
             &-1:hover ul {
+                animation: smoothAppear .8s forwards;
                 display: block;
                 background: rgba($color-black, 0.85);
             }
@@ -60,7 +62,7 @@
                 padding-right: .38rem;
     
                 &__link {
-                    margin-top: 2.5rem;
+                    margin-top: .6rem;
                     padding: 1.5rem 0;
                     text-align: center;
                 }
