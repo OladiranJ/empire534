@@ -55,6 +55,7 @@
 
             .dropdown {
                 display: none;
+                border-radius: 3px;
                 list-style: none;
                 position: absolute;
                 margin-top: .8rem;
@@ -115,9 +116,9 @@
 
     &.scrolled {
         height: 5.5rem;
-        background: rgba($color-black, 0.85);
+        background: rgba($color-black, 0.95);
         color: $color-white;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .35);
 
         .menu__icon {
             &__line,

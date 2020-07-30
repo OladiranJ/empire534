@@ -1,6 +1,7 @@
 // Imports
 
 import React    from 'react';
+import Footer   from '../components/layouts/Footer';
 
 
 
@@ -27,8 +28,10 @@ const Home = () => {
                     <h3>This is Where introduction and pictures should go</h3>
                 </section>
             </main>
+
+            <Footer/>
         </div>
-        
+
     )
 
 }

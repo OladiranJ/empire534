@@ -127,9 +127,9 @@ class Navbar extends Component {
 
                         
                     </li>
-                    <li className={`nav__links--link ${translateClass}`}><a href="#">Contact Us</a></li>
                     <li className={`nav__links--link ${translateClass}`}><a href="#">Training</a></li>
                     <li className={`nav__links--link ${translateClass}`}><a href="#">Streaming</a></li>
+                    <li className={`nav__links--link ${translateClass}`}><a href="#">Contact Us</a></li>
                 </ul>
             </div>
         )
