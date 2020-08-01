@@ -6,12 +6,14 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+
 // Layout
 
 @import "layout/footer";
 @import "layout/grid";
 @import "layout/header";
 @import "layout/navbar";
+
 
 // Base
 
@@ -23,6 +25,9 @@
 
 
 // Components
+
+@import "components/button";
+@import "components/photoCarousel";
 
 
 // Pages

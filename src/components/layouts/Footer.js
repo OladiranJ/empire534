@@ -21,15 +21,15 @@ const Footer = () => {
                 <div className="col-1-of-2">
                     <div className="footer__navigation">
                         <ul className="footer__list">
-                            <li className="footer__item"><a href="" className="footer__link">Contact Us</a></li>
-                            <li className="footer__item"><a href="" className="footer__link">Privacy Policy</a></li>
-                            <li className="footer__item"><a href="" className="footer__link">Training</a></li>
-                            <li className="footer__item"><a href="" className="footer__link">Streaming</a></li>
+                            <li className="footer__item"><a href="#" className="footer__link">Contact Us</a></li>
+                            <li className="footer__item"><a href="#" className="footer__link">Privacy Policy</a></li>
+                            <li className="footer__item"><a href="#" className="footer__link">Training</a></li>
+                            <li className="footer__item"><a href="#" className="footer__link">Streaming</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-1-of-2">
+                <div className="col-1-of-2">
                     <p className="footer__copyright">
                         Copyright &copy; 2020 Empire534 LLC. All Rights Reserved.
                     </p>
@@ -41,7 +41,7 @@ const Footer = () => {
                     <div className="footer__socials">
                         <ul className="footer__socials-list">
                             <li className="footer__socials-item">
-                                <a href="" className="footer__socials-link">
+                                <a href="#" className="footer__socials-link">
                                     <img 
                                         src={require("../../images/colorinsta.png")} 
                                         alt="Empire534 Instagram" 
@@ -50,7 +50,7 @@ const Footer = () => {
                                 </a>
                             </li>
                             <li className="footer__socials-item">
-                                <a href="" className="footer__socials-link">
+                                <a href="#" className="footer__socials-link">
                                     <img 
                                         src={require("../../images/colorfacebook.png")} 
                                         alt="Empire534 Facebook" 

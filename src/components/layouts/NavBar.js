@@ -96,7 +96,7 @@ class Navbar extends Component {
                 </div>
     
                 <input type="checkbox" className="menu__btn" id="menu__btn" checked={menuChecked} onChange={this.onClickMenuCheckbox} />
-                <label for="menu__btn" className="menu__icon">
+                <label htmlFor="menu__btn" className="menu__icon">
                     <span className="menu__icon-line"></span>
                 </label>
     
@@ -108,7 +108,7 @@ class Navbar extends Component {
                             checked={this.state.checked} 
                             onChange={this.onChangeCheckbox}
                         />
-                        <label for="about__btn" className="about__dropdown">
+                        <label htmlFor="about__btn" className="about__dropdown">
                             <span className="about__dropdown-word">About &#xbb;</span>
                         </label>
                         
