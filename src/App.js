@@ -3,6 +3,7 @@
 import React, { Component }                       from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home                                       from './pages/home';
+import Contact                                    from './pages/contact'
 import FAQ                                        from './pages/faq';
 import Testimonials                               from './pages/testimonials'
 import Training                                   from './pages/training'
@@ -25,6 +26,7 @@ class App extends Component {
         <div className="container">
           <Switch>
             <Route exact path="/" component={Home}/>
+            <Route exact path="/contact" component={Contact}/>
             <Route exact path="/faq" component={FAQ}/>
             <Route exact path="/testimonials" component={Testimonials}/>
             <Route exact path="/training" component={Training}/>
