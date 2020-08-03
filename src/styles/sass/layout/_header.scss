@@ -2,10 +2,18 @@
 
 .header {
     height: 95vh;
-    background-image: linear-gradient(to right bottom, rgba($color-midnight-dark, 0.7) 38%, rgba($color-midnight-light, 0.7) 125%), url(../../images/man-and-woman-holding-battle-ropes-1552242.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
+
+    &__home {
+        background-image: linear-gradient(to right bottom, rgba($color-midnight-dark, 0.7) 38%, rgba($color-midnight-light, 0.7) 125%), url(../../images/man-and-woman-holding-battle-ropes-1552242.jpg);
+    }
+
+    &__faq,
+    &__testimonials {
+        background-image: linear-gradient(to right bottom, $color-midnight-dark, $color-midnight-light);
+    }
 
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);

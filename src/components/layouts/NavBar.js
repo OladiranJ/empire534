@@ -115,19 +115,19 @@ class Navbar extends Component {
 
                         {isMobile ? (
                             <ul className="dropdown" style={styleForUl}>
-                                <li className={`dropdown__link ${afterClass}`}><a href="#">Testimonials</a></li>
-                                <li className={`dropdown__link ${afterClass}`}><a href="#">FAQs</a></li>
+                                <li className={`dropdown__link ${afterClass}`}><a href="/testimonials">Testimonials</a></li>
+                                <li className={`dropdown__link ${afterClass}`}><a href="/faq">FAQs</a></li>
                             </ul>
                         ) : (
                             <ul className="dropdown">
-                                <li className={`dropdown__link ${afterClass}`}><a href="#">Testimonials</a></li>
-                                <li className={`dropdown__link ${afterClass}`}><a href="#">FAQs</a></li>
+                                <li className={`dropdown__link ${afterClass}`}><a href="/testimonials">Testimonials</a></li>
+                                <li className={`dropdown__link ${afterClass}`}><a href="/faq">FAQs</a></li>
                             </ul>
                         )}
 
                         
                     </li>
-                    <li className={`nav__links--link ${translateClass}`}><a href="#">Training</a></li>
+                    <li className={`nav__links--link ${translateClass}`}><a href="/training">Training</a></li>
                     <li className={`nav__links--link ${translateClass}`}><a href="#">Streaming</a></li>
                     <li className={`nav__links--link ${translateClass}`}><a href="#">Contact Us</a></li>
                 </ul>

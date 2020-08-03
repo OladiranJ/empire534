@@ -3,6 +3,9 @@
 import React, { Component }                       from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home                                       from './pages/home';
+import FAQ                                        from './pages/faq';
+import Testimonials                               from './pages/testimonials'
+import Training                                   from './pages/training'
 import NavBar                                     from './components/layouts/NavBar';
 
 
@@ -22,6 +25,9 @@ class App extends Component {
         <div className="container">
           <Switch>
             <Route exact path="/" component={Home}/>
+            <Route exact path="/faq" component={FAQ}/>
+            <Route exact path="/testimonials" component={Testimonials}/>
+            <Route exact path="/training" component={Training}/>
           </Switch>
         </div>
       </Router>

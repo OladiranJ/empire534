@@ -15,7 +15,7 @@ const Home = () => {
     return (
 
         <div>
-            <header className="header">
+            <header className="header header__home">
                 <div className="header__text-box">
                     <h1 className="heading-primary">
                         <span className="heading-primary--main">Empire 534</span>

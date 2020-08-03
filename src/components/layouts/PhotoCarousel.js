@@ -26,31 +26,31 @@ class PhotoCarousel extends Component {
           };
 
         return (
-            <div className="carousel__container">
-                <Slider {...settings} className="carousel">
-                    <div className="carousel__slide">
-                        <img 
-                            src={require('../../images/dumbells-on-rack-dark.jpg')}
-                            alt="Photo 1"
-                            className="carousel__slide-pic"
-                        />
-                    </div>
-                    <div className="carousel__slide">
-                        <img 
-                            src={require('../../images/man-using-stationary-bike-897064.jpg')}
-                            alt="Photo 2"
-                            className="carousel__slide-pic"
-                        />
-                    </div>
-                    <div className="carousel__slide">
-                        <img 
-                            src={require('../../images/man-in-black-reebok-shoes-about-to-carry-barbell-949129.jpg')}
-                            alt="Photo 3"
-                            className="carousel__slide-pic"
-                        />
-                    </div>
-                </Slider>
-            </div>
+            
+            <Slider {...settings}>
+                <div className="carousel__slide">
+                    <img 
+                        src={require('../../images/dumbells-on-rack-dark.jpg')}
+                        alt="Photo 1"
+                        className="carousel__slide-pic"
+                    />
+                </div>
+                <div className="carousel__slide">
+                    <img 
+                        src={require('../../images/man-using-stationary-bike-897064.jpg')}
+                        alt="Photo 2"
+                        className="carousel__slide-pic"
+                    />
+                </div>
+                <div className="carousel__slide">
+                    <img 
+                        src={require('../../images/man-in-black-reebok-shoes-about-to-carry-barbell-949129.jpg')}
+                        alt="Photo 3"
+                        className="carousel__slide-pic"
+                    />
+                </div>
+            </Slider>
+            
         )
 
     }
