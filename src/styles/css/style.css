@@ -3,9 +3,15 @@
   padding: 10rem 0;
   font-size: 1.4rem;
   color: #f7f7f7; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   .footer__text-box {
     text-align: center;
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .footer__text-box {
+        margin-bottom: 6rem; } }
   .footer-primary {
     width: 15rem;
     height: auto;
@@ -14,6 +20,10 @@
     border-top: 1px solid #999;
     padding-top: 2rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%;
+        text-align: center; } }
   .footer__list {
     list-style: none; }
   .footer__link:link, .footer__link:visited {
@@ -24,9 +34,8 @@
     display: inline-block;
     transition: all .2s; }
   .footer__link:hover, .footer__link:active {
-    background-image: linear-gradient(to right, #fff, #dd1818);
     -webkit-background-clip: text;
-    color: transparent;
+    color: #dd1818;
     filter: drop-shadow(1px 2px 3px black);
     transform: scale(1.1); }
   .footer__item {
@@ -38,8 +47,16 @@
     padding-top: 2rem;
     width: 80%;
     float: right; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        float: none; } }
   .footer__socials {
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__socials {
+        width: 100%;
+        text-align: center; } }
     .footer__socials-list {
       list-style: none; }
     .footer__socials-item {
@@ -57,6 +74,13 @@
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 4rem; }
+  @media (max-width: 75em) {
+    .row {
+      padding: 0 4rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 70rem;
+      padding: 0 4rem; } }
   .row::after {
     content: "";
     display: table;
@@ -65,6 +89,13 @@
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100%  !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -89,6 +120,14 @@
     background-image: linear-gradient(to right bottom, rgba(35, 37, 38, 0.7) 38%, rgba(65, 67, 69, 0.7) 125%), url(../../images/man-and-woman-holding-battle-ropes-1552242.jpg); }
   .header__faq, .header__testimonials, .header__training, .header__contact {
     background-image: linear-gradient(to right bottom, #232526, #414345); }
+  @media (max-width: 56.25em) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
+  @media (max-width: 37.5em) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 86vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 86vh, 0 100%); } }
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -246,12 +285,21 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
   background-color: #eee; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .navbar .menu__icon {
     display: block; }
     .navbar .menu__icon-line {
@@ -351,6 +399,9 @@ body {
     display: block;
     font-size: 6rem;
     font-weight: 400; }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        font-family: 5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -361,6 +412,12 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px; }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
 
 .heading-secondary-white {
   font-size: 3.5rem;
@@ -508,7 +565,7 @@ body {
 
 .slick-prev:before,
 .slick-next:before {
-  color: #232526; }
+  display: none; }
 
 .carousel__slide-pic {
   max-width: 100%;

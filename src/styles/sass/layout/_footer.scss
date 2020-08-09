@@ -4,10 +4,17 @@
     font-size: 1.4rem;
     color: $color-gray-light-1;
     
+    @include respond (tab-port) {
+        padding: 8rem 0;
+    }
 
     &__text-box {
         text-align: center;
         margin-bottom: 8rem;
+
+        @include respond (tab-port) {
+            margin-bottom: 6rem;
+        }
     }
 
     &-primary {
@@ -20,6 +27,11 @@
         border-top: 1px solid $color-gray-dark-2;
         padding-top: 2rem;
         display: inline-block;
+
+        @include respond (tab-port) {
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__list {
@@ -39,9 +51,9 @@
 
         &:hover,
         &:active {
-            background-image: linear-gradient(to right, $color-white, $color-red);
+            // background-image: linear-gradient(to right, $color-white, $color-red);
             -webkit-background-clip: text;
-            color: transparent;
+            color: $color-red;
             filter: drop-shadow(1px 2px 3px black);
             // box-shadow: 0 1rem 2rem rgba($color-black, .4);
             transform: scale(1.1);
@@ -61,10 +73,20 @@
         padding-top: 2rem;
         width: 80%;
         float: right;
+
+        @include respond (tab-port) {
+            width: 100%;
+            float: none;
+        }
     }
 
     &__socials {
         display: inline-block;
+
+        @include respond (tab-port) {
+            width: 100%;
+            text-align: center;
+        }
 
         &-list {
             list-style: none;
