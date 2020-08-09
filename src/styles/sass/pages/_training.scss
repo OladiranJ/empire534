@@ -1,6 +1,16 @@
 .section-small-group {
     padding: 28rem 0;
     margin-top: -20vh;
+
+    @include respond (tab-port) {
+        padding: 22rem 0;
+    }
+
+    .row {
+        @include respond (tab-port) {
+            margin-bottom: 2rem;
+        }
+    }
 }
 
 .section-private {
@@ -9,11 +19,36 @@
     transform: skewY(-7deg);
     margin-top: -9rem;
 
+    @include respond (tab-port) {
+        padding: 10rem 0;
+        transform: skewY(-5.5deg);
+    }
+
+    .row {
+        @include respond (tab-port) {
+            margin-bottom: 2rem;
+        }
+    }
+
     & > * {
         transform: skewY(7deg);
+
+        @include respond (tab-port) {
+            transform: skewY(5.5deg);
+        }
     }
 }
 
 .section-duo {
     padding: 20rem 0;
+
+    @include respond (tab-port) {
+        padding: 10rem 0;
+    }
+
+    .row {
+        @include respond (tab-port) {
+            margin-bottom: 2rem;
+        }
+    }
 }
