@@ -42,12 +42,12 @@
         }
     }
 
-    &--red {
-        background-color: $color-red;
+    &--orange {
+        background-color: $color-orange;
         color: $color-white;
 
         &::after {
-            background-color: $color-red;
+            background-color: $color-orange;
         }
     }
 
@@ -74,10 +74,10 @@
     &:link,
     &:visited {
         font-size: $default-font-size;
-        color: $color-red;
+        color: $color-orange;
         display: inline-block;
         text-decoration: none;
-        border-bottom: 1px solid $color-red;
+        border-bottom: 1px solid $color-orange;
         padding: 3px;
         transition: all .2s;
     }
@@ -85,7 +85,7 @@
     
 
     &:hover {
-        background-color: $color-red;
+        background-color: $color-orange;
         color: $color-white;
         box-shadow: 0 1rem 2rem rgba($color-black,.15);
         transform: translateY(-2px);

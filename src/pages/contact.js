@@ -69,7 +69,7 @@ const Contact = () => {
                                     </div>
 
                                     <div className="form__group">
-                                        <button className="btn btn--red">Submit &rarr;</button>
+                                        <button className="btn btn--orange">Submit &rarr;</button>
                                     </div>
 
                                 </form>
