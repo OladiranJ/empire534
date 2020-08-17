@@ -21,9 +21,9 @@ const Footer = () => {
                 <div className="col-1-of-2">
                     <div className="footer__navigation">
                         <ul className="footer__list">
-                            <li className="footer__item"><a href="#" className="footer__link">Contact Us</a></li>
-                            <li className="footer__item"><a href="#" className="footer__link">Privacy Policy</a></li>
-                            <li className="footer__item"><a href="#" className="footer__link">Training</a></li>
+                            <li className="footer__item"><a href="/contact" className="footer__link">Contact Us</a></li>
+                            <li className="footer__item"><a href="/privacy" className="footer__link">Privacy Policy</a></li>
+                            <li className="footer__item"><a href="/training" className="footer__link">Training</a></li>
                             <li className="footer__item"><a href="#" className="footer__link">Streaming</a></li>
                         </ul>
                     </div>

@@ -23,7 +23,12 @@ body {
     }
 
     &--sub {
-        
+        font-size: 4rem;
+        color: $color-black;
+        text-transform: uppercase;
+        font-weight: 700;
+        display: inline-block;
+        letter-spacing: 2px;
     }
 }
 
@@ -36,6 +41,10 @@ body {
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: 2px;
+
+    &-privacy {
+        font-size: 3rem;
+    }
 
     @include respond (tab-port) {
         font-size: 3rem;
@@ -67,6 +76,10 @@ body {
     font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
+
+    &-privacy {
+        margin-bottom: .5rem;
+    }
 }
 
 .paragraph {
@@ -78,5 +91,17 @@ body {
 
     &:not(:last-child) {
         margin-bottom: 30px;
+    }
+
+    &--privacy {
+        margin-left: 4rem;
+    }
+
+    &-spaced {
+        margin-bottom: .5rem;
+    }
+
+    li {
+        margin-bottom: 2rem;
     }
 }

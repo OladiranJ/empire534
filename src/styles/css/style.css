@@ -402,6 +402,13 @@ body {
     @media (max-width: 37.5em) {
       .heading-primary--main {
         font-family: 5rem; } }
+  .heading-primary--sub {
+    font-size: 4rem;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    letter-spacing: 2px; }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -412,6 +419,8 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px; }
+  .heading-secondary-privacy {
+    font-size: 3rem; }
   @media (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem; } }
@@ -437,6 +446,8 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase; }
+  .heading-tertiary-privacy {
+    margin-bottom: .5rem; }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -444,6 +455,12 @@ body {
     color: #fff; }
   .paragraph:not(:last-child) {
     margin-bottom: 30px; }
+  .paragraph--privacy {
+    margin-left: 4rem; }
+  .paragraph-spaced {
+    margin-bottom: .5rem; }
+  .paragraph li {
+    margin-bottom: 2rem; }
 
 .u-center-text {
   text-align: center; }
@@ -684,6 +701,10 @@ body {
   margin-top: -20vh; }
 
 .section-introduction {
+  padding: 28rem 0;
+  margin-top: -20vh; }
+
+.section-privacy {
   padding: 28rem 0;
   margin-top: -20vh; }
 
