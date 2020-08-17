@@ -44,6 +44,10 @@ body {
 
     &-privacy {
         font-size: 3rem;
+
+        @include respond (tab-land) {
+            font-size: 2.7rem;
+        }
     }
 
     @include respond (tab-port) {
@@ -95,6 +99,8 @@ body {
 
     &--privacy {
         margin-left: 4rem;
+
+        
     }
 
     &-spaced {
