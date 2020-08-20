@@ -57,10 +57,11 @@
     &__training {
         background-image: linear-gradient(to right bottom, rgba($color-midnight-dark, 0.7) 38%, rgba($color-midnight-light, 0.7) 125%), url(../../images/training-medium-1x.jpg);
         background-repeat: no-repeat;
-        background-position-y: 25%;
+        background-position-y: 35%;
 
         @include respond (tab-land) {
             height: 95vh;
+            background-position-y: 45%;
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 79vh, 0 100%) !important;
             clip-path: polygon(0 0, 100% 0, 100% 79vh, 0 100%) !important;
         }
@@ -83,7 +84,7 @@
     &__contact {
         background-image: linear-gradient(to right bottom, rgba($color-midnight-dark, 0.7) 38%, rgba($color-midnight-light, 0.7) 125%), url(../../images/contact-us-medium-1x.jpg);
         background-repeat: no-repeat;
-        background-position-y: 55%;
+        background-position-y: 40%;
 
         @include respond (tab-land) {
             // height: 95vh;
@@ -92,6 +93,7 @@
         @include respond (phone) {
             height: 70vh;
             background-image: linear-gradient(to right bottom, rgba($color-midnight-dark, 0.7) 38%, rgba($color-midnight-light, 0.7) 125%), url(../../images/contact-us-small-1x.jpg);
+            background-position-y: 55%;
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%) !important;
             clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%) !important;
         }

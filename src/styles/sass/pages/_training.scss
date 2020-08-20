@@ -20,14 +20,17 @@
     transform: skewY(-7deg);
     margin-top: -9rem;
 
-    // make sure you make the background image at this section responsive today
     @include respond (tab-port) {
         padding: 10rem 0;
         transform: skewY(-5.5deg);
     }
 
     @include respond (phone) {
+        height: 75vh;
         transform: skewY(-9.5deg);
+        background-image: linear-gradient(to right, rgba($color-orange-light-1, 0.7), rgba($color-orange, 0.7)), url(../../images/main-page-smaller-1x.jpg);
+        background-position-y: 45%;
+        background-position-x: 75%;
     }
 
     .row {
