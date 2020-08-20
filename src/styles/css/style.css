@@ -110,30 +110,92 @@
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
-  height: 95vh;
+  height: 100vh;
   background-size: cover;
-  background-position: top;
+  background-position: top center;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 82vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 82vh, 0 100%); }
   .header__home {
-    background-image: linear-gradient(to right bottom, rgba(35, 37, 38, 0.7) 38%, rgba(65, 67, 69, 0.7) 125%), url(../../images/man-and-woman-holding-battle-ropes-1552242.jpg); }
-  .header__faq, .header__testimonials, .header__training, .header__contact {
-    background-image: linear-gradient(to right bottom, #232526, #414345); }
+    background-image: linear-gradient(to right bottom, rgba(35, 37, 38, 0.7) 38%, rgba(65, 67, 69, 0.7) 125%), url(../../images/main-page-medium-2x.jpg); }
+    @media (max-width: 56.25em) {
+      .header__home {
+        background-image: linear-gradient(to right bottom, rgba(35, 37, 38, 0.7) 38%, rgba(65, 67, 69, 0.7) 125%), url(../../images/main-page-small-1x.jpg); } }
+    @media (max-width: 37.5em) {
+      .header__home {
+        height: 50vh;
+        background-image: linear-gradient(to right bottom, rgba(35, 37, 38, 0.7) 38%, rgba(65, 67, 69, 0.7) 125%), url(../../images/main-page-smaller-1x.jpg); } }
+  .header__faq {
+    background-image: linear-gradient(to right bottom, rgba(35, 37, 38, 0.7) 38%, rgba(65, 67, 69, 0.7) 125%), url(../../images/about-us-medium-1x.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 25%; }
+    @media (max-width: 37.5em) {
+      .header__faq {
+        height: 70vh;
+        background-image: linear-gradient(to right bottom, rgba(35, 37, 38, 0.7) 38%, rgba(65, 67, 69, 0.7) 125%), url(../../images/about-us-small-1x.jpg);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%) !important;
+        clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%) !important; } }
+  .header__testimonials {
+    background-image: linear-gradient(to right bottom, rgba(35, 37, 38, 0.7) 38%, rgba(65, 67, 69, 0.7) 125%), url(../../images/scrolling-1-medium-1x.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 45%; }
+    @media (max-width: 75em) {
+      .header__testimonials {
+        height: 95vh; } }
+    @media (max-width: 37.5em) {
+      .header__testimonials {
+        height: 70vh;
+        background-image: linear-gradient(to right bottom, rgba(35, 37, 38, 0.7) 38%, rgba(65, 67, 69, 0.7) 125%), url(../../images/scrolling-1-small-1x.jpg);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%) !important;
+        clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%) !important; } }
+  .header__training {
+    background-image: linear-gradient(to right bottom, rgba(35, 37, 38, 0.7) 38%, rgba(65, 67, 69, 0.7) 125%), url(../../images/training-medium-1x.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 25%; }
+    @media (max-width: 75em) {
+      .header__training {
+        height: 95vh;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 79vh, 0 100%) !important;
+        clip-path: polygon(0 0, 100% 0, 100% 79vh, 0 100%) !important; } }
+    @media (max-width: 56.25em) {
+      .header__training {
+        height: 90vh;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%) !important;
+        clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%) !important;
+        margin-bottom: 9rem; } }
+    @media (max-width: 37.5em) {
+      .header__training {
+        height: 70vh;
+        background-image: linear-gradient(to right bottom, rgba(35, 37, 38, 0.7) 38%, rgba(65, 67, 69, 0.7) 125%), url(../../images/training-small-1x.jpg);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%) !important;
+        clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%) !important; } }
+  .header__contact {
+    background-image: linear-gradient(to right bottom, rgba(35, 37, 38, 0.7) 38%, rgba(65, 67, 69, 0.7) 125%), url(../../images/contact-us-medium-1x.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 55%; }
+    @media (max-width: 37.5em) {
+      .header__contact {
+        height: 70vh;
+        background-image: linear-gradient(to right bottom, rgba(35, 37, 38, 0.7) 38%, rgba(65, 67, 69, 0.7) 125%), url(../../images/contact-us-small-1x.jpg);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%) !important;
+        clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%) !important; } }
   @media (max-width: 56.25em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   @media (max-width: 37.5em) {
     .header {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 86vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 86vh, 0 100%); } }
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 42vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 42vh, 0 100%); } }
   .header__text-box {
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media (max-width: 37.5em) {
+      .header__text-box {
+        top: 50%; } }
 
 .navbar {
   position: fixed;
@@ -727,13 +789,17 @@ body {
 
 .section-private {
   padding: 20rem 0;
-  background-image: linear-gradient(to right, rgba(255, 139, 94, 0.9), rgba(255, 69, 0, 0.9));
+  background-image: linear-gradient(to right, rgba(255, 139, 94, 0.7), rgba(255, 69, 0, 0.7)), url(../../images/main-page-medium-1x.jpg);
+  background-size: cover;
   transform: skewY(-7deg);
   margin-top: -9rem; }
   @media (max-width: 56.25em) {
     .section-private {
       padding: 10rem 0;
       transform: skewY(-5.5deg); } }
+  @media (max-width: 37.5em) {
+    .section-private {
+      transform: skewY(-9.5deg); } }
   @media (max-width: 56.25em) {
     .section-private .row {
       margin-bottom: 2rem; } }
@@ -742,6 +808,9 @@ body {
     @media (max-width: 56.25em) {
       .section-private > * {
         transform: skewY(5.5deg); } }
+    @media (max-width: 37.5em) {
+      .section-private > * {
+        transform: skewY(9.5deg); } }
 
 .section-duo {
   padding: 20rem 0; }

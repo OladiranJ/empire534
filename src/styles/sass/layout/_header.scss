@@ -1,24 +1,104 @@
 // Header Styling
 
 .header {
-    height: 95vh;
+    height: 100vh;
     background-size: cover;
-    background-position: top;
+    background-position: top center;
     position: relative;
 
     &__home {
-        background-image: linear-gradient(to right bottom, rgba($color-midnight-dark, 0.7) 38%, rgba($color-midnight-light, 0.7) 125%), url(../../images/man-and-woman-holding-battle-ropes-1552242.jpg);
+        background-image: linear-gradient(to right bottom, rgba($color-midnight-dark, 0.7) 38%, rgba($color-midnight-light, 0.7) 125%), url(../../images/main-page-medium-2x.jpg);
+
+        @include respond (tab-port) {
+            background-image: linear-gradient(to right bottom, rgba($color-midnight-dark, 0.7) 38%, rgba($color-midnight-light, 0.7) 125%), url(../../images/main-page-small-1x.jpg);
+        }
+
+        @include respond (phone) {
+            height: 50vh;
+            background-image: linear-gradient(to right bottom, rgba($color-midnight-dark, 0.7) 38%, rgba($color-midnight-light, 0.7) 125%), url(../../images/main-page-smaller-1x.jpg);
+            // background-position: center center;
+        }
     }
 
-    &__faq,
-    &__testimonials,
-    &__training,
+    &__faq {
+        background-image: linear-gradient(to right bottom, rgba($color-midnight-dark, 0.7) 38%, rgba($color-midnight-light, 0.7) 125%), url(../../images/about-us-medium-1x.jpg);
+        background-repeat: no-repeat;
+        background-position-y: 25%;
+
+        @include respond (tab-land) {
+            // height: 95vh;
+        }
+
+        @include respond (phone) {
+            height: 70vh;
+            background-image: linear-gradient(to right bottom, rgba($color-midnight-dark, 0.7) 38%, rgba($color-midnight-light, 0.7) 125%), url(../../images/about-us-small-1x.jpg);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%) !important;
+            clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%) !important;
+        }
+    }
+
+    &__testimonials {
+        background-image: linear-gradient(to right bottom, rgba($color-midnight-dark, 0.7) 38%, rgba($color-midnight-light, 0.7) 125%), url(../../images/scrolling-1-medium-1x.jpg);
+        background-repeat: no-repeat;
+        background-position-y: 45%;
+
+        @include respond (tab-land) {
+            height: 95vh;
+        }
+
+        @include respond (phone) {
+            height: 70vh;
+            background-image: linear-gradient(to right bottom, rgba($color-midnight-dark, 0.7) 38%, rgba($color-midnight-light, 0.7) 125%), url(../../images/scrolling-1-small-1x.jpg);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%) !important;
+            clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%) !important;
+        }
+    }
+
+    &__training {
+        background-image: linear-gradient(to right bottom, rgba($color-midnight-dark, 0.7) 38%, rgba($color-midnight-light, 0.7) 125%), url(../../images/training-medium-1x.jpg);
+        background-repeat: no-repeat;
+        background-position-y: 25%;
+
+        @include respond (tab-land) {
+            height: 95vh;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 79vh, 0 100%) !important;
+            clip-path: polygon(0 0, 100% 0, 100% 79vh, 0 100%) !important;
+        }
+
+        @include respond (tab-port) {
+            height: 90vh;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%) !important;
+            clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%) !important;
+            margin-bottom: 9rem;
+        }
+
+        @include respond (phone) {
+            height: 70vh;
+            background-image: linear-gradient(to right bottom, rgba($color-midnight-dark, 0.7) 38%, rgba($color-midnight-light, 0.7) 125%), url(../../images/training-small-1x.jpg);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%) !important;
+            clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%) !important;
+        }
+    }
+
     &__contact {
-        background-image: linear-gradient(to right bottom, $color-midnight-dark, $color-midnight-light);
+        background-image: linear-gradient(to right bottom, rgba($color-midnight-dark, 0.7) 38%, rgba($color-midnight-light, 0.7) 125%), url(../../images/contact-us-medium-1x.jpg);
+        background-repeat: no-repeat;
+        background-position-y: 55%;
+
+        @include respond (tab-land) {
+            // height: 95vh;
+        }
+
+        @include respond (phone) {
+            height: 70vh;
+            background-image: linear-gradient(to right bottom, rgba($color-midnight-dark, 0.7) 38%, rgba($color-midnight-light, 0.7) 125%), url(../../images/contact-us-small-1x.jpg);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%) !important;
+            clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%) !important;
+        }
     }
 
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 82vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 82vh, 0 100%);
 
     @include respond (tab-port) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -26,8 +106,8 @@
     }
 
     @include respond (phone) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 86vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 86vh, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 42vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 42vh, 0 100%);
     }
 
     &__text-box {
@@ -36,5 +116,9 @@
         left:   50%;
         transform: translate(-50%, -50%);
         text-align: center;
+
+        @include respond (phone) {
+            top: 50%;
+        }
     }
 }
