@@ -9,14 +9,19 @@
     &__home {
         background-image: linear-gradient(to right bottom, rgba($color-midnight-dark, 0.7) 38%, rgba($color-midnight-light, 0.7) 125%), url(../../images/main-page-medium-2x.jpg);
 
+        @include respond (tab-land) {
+            background-position-x: 76%;
+        }
+
         @include respond (tab-port) {
             background-image: linear-gradient(to right bottom, rgba($color-midnight-dark, 0.7) 38%, rgba($color-midnight-light, 0.7) 125%), url(../../images/main-page-small-1x.jpg);
+            background-position-x: 78%;
         }
 
         @include respond (phone) {
             height: 50vh;
             background-image: linear-gradient(to right bottom, rgba($color-midnight-dark, 0.7) 38%, rgba($color-midnight-light, 0.7) 125%), url(../../images/main-page-smaller-1x.jpg);
-            // background-position: center center;
+            background-position-x: 75%;
         }
     }
 
