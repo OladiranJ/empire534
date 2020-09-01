@@ -19,7 +19,6 @@ const Home = () => {
                 <div className="header__text-box">
                     <h1 className="heading-primary">
                         <span className="heading-primary--main">Empire 534</span>
-                        {/* <span class="heading-primary--sub"></span> */}
                     </h1>
                 </div>
             </header>
@@ -27,29 +26,27 @@ const Home = () => {
             <main>
                 <section className="section-introduction">
                     <div className="u-center-text u-margin-bottom-big">
-                        <h2 className="heading-secondary">Lorem Ipsum</h2>
+                        <h2 className="heading-secondary">Who We Are</h2>
                     </div>
 
                     <div className="row">
                         <div className="col-1-of-2">
-                            <h3 className="heading-tertiary u-margin-bottom-small">Lorem ipsum dolor sit amet consectetur</h3>
+                            <h3 className="heading-tertiary u-margin-bottom-small">Mission Statement</h3>
                             <p className="paragraph">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ea? Magni fugit, doloribus rem nisi asperiores a iste ut reiciendis nesciunt blanditiis, iure autem nam minima sed vel alias ratione!
+                                Our mission is to create a place where we can sweat, learn, and grow together. We are dedicated to changing lives through heart-pumping, muscle-shaking workouts and a supportive community.
+                            </p>
+                            <p className="paragraph">
+                                We believe in courage, dedication, commitment and hard work in all aspects of life. Together we not only strengthen our body, but our mind and soul.
+                            </p>
+                            <p className="paragraph">
+                                We are Empire534.
                             </p>
 
-                            <h3 className="heading-tertiary u-margin-bottom-small">Lorem ipsum dolor sit amet consectetur</h3>
-                            <p className="paragraph">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ea? Magni fugit, doloribus rem nisi asperiores a iste ut reiciendis!
-                            </p>
-
-                            <a href="#" className="btn-text">Learn more &rarr;</a>
+                            <a href="/training" className="btn-text">Learn more &rarr;</a>
                         </div>
 
                         <div className="col-1-of-2">
                             <PhotoCarousel/>
-                            {/* <div className="carousel-container"> */}
-                                {/* <PhotoCarousel /> */}
-                            {/* </div> */}
                         </div>
                     </div>
                 </section>

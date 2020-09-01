@@ -36,43 +36,29 @@ const FAQ = () => {
 
                         <div className="col-3-of-4">
                             <h3 className="heading-tertiary">
-                                Amet tempor cillum proident voluptate laboris excepteur commodo sunt exercitation?
+                                What if I have not worked out in a while, or ever?
                             </h3>
                             <p className="paragraph">
-                                Eu fugiat duis commodo irure. Id reprehenderit dolor est incididunt laboris quis labore ut minim non. Dolore eu dolore esse velit do commodo proident. In proident aute cillum non sunt voluptate proident ea laboris aliqua elit.
+                                We ask that you come in with a good attitude and you're ready to work hard with us! We will discuss all your concerns or questions upon initial contact.
                             </p>
 
                             <h3 className="heading-tertiary">
-                                Ullamco proident aliquip enim nisi labore id?
+                                Do you provide towels and water?
                             </h3>
                             <p className="paragraph">
-                                Mollit culpa quis Lorem ullamco sit esse veniam dolor. Id minim velit amet amet excepteur. Amet id est ut aliqua. Id laboris occaecat sit et commodo commodo adipisicing enim veniam.
+                                We currently do not offer towel service and please bring your water bottle filled.
                             </p>
 
                             <h3 className="heading-tertiary">
-                                Sunt ipsum pariatur quis dolor veniam?
+                                What if I have injuries?
                             </h3>
                             <p className="paragraph">
-                                Excepteur reprehenderit et anim laborum. Proident voluptate eiusmod aliquip duis ea culpa magna sit adipisicing veniam. Nisi ad mollit exercitation fugiat irure nulla nisi. Qui Lorem enim irure voluptate Lorem.
-                            </p>
-
-                            <h3 className="heading-tertiary">
-                                Tempor cillum nulla duis sit nostrud reprehenderit aliquip esse proident officia commodo minim?
-                            </h3>
-                            <p className="paragraph">
-                                Proident ut irure sint nostrud qui irure ullamco proident elit occaecat sunt non. Minim nulla enim exercitation consequat adipisicing esse ipsum. Ad quis minim excepteur anim sunt Lorem aute.
-                            </p>
-                            
-                            <h3 className="heading-tertiary">
-                                Cillum occaecat aliquip labore commodo ipsum aliqua eiusmod ullamco cillum?
-                            </h3>
-                            <p className="paragraph">
-                                Commodo veniam duis consectetur dolor ad. Veniam labore dolore esse adipisicing amet ut et tempor est Lorem non. Reprehenderit nulla voluptate eu sint culpa pariatur ex laborum consectetur enim laborum do nostrud. Et sunt aliquip non dolor sit ut.
+                                We will sit down and discuss any injuries and concerns prior to your first workout and then create a customized plan for you.
                             </p>
                         </div>
                     </div>
 
-                    <div className="row u-margin-top-big">
+                    {/* <div className="row u-margin-top-big">
                         <div className="col-1-of-4">
                             <h2 className="heading-secondary">
                                 Membership
@@ -101,7 +87,7 @@ const FAQ = () => {
                                 Anim deserunt nisi incididunt sit. Ex commodo commodo commodo duis veniam. Nisi dolore aliqua dolore irure nulla ut eiusmod. Incididunt Lorem nisi aliqua nostrud est id sit fugiat. Veniam sit eu aliquip enim sunt incididunt laboris adipisicing minim.
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                 </section>
             </main>
 
