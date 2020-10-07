@@ -64,7 +64,6 @@ class Navbar extends Component {
     }
 
     onClickNavLinks = e => {
-        console.log(e.target, this.menuBackground.current)
         if(e.target === this.menuBackground.current) {
             this.setState({
                 menuChecked: false,
@@ -76,6 +75,13 @@ class Navbar extends Component {
     onClickMenuCheckbox = () => {
         this.setState({
             menuChecked: !this.state.menuChecked,
+            checked: false
+        })
+    }
+
+    onClickRedirect = () => {
+        this.setState({
+            menuChecked: false,
             checked: false
         })
     }
@@ -116,21 +122,31 @@ class Navbar extends Component {
 
                         {isMobile ? (
                             <ul className="dropdown" style={styleForUl}>
-                                <li className={`dropdown__link ${afterClass}`}><Link to="/testimonials">Testimonials</Link></li>
-                                <li className={`dropdown__link ${afterClass}`}><Link to="/faq">FAQs</Link></li>
+                                <li className={`dropdown__link ${afterClass}`}>
+                                    <Link to="/testimonials" onClick={this.onClickRedirect}>Testimonials</Link>
+                                </li>
+                                <li className={`dropdown__link ${afterClass}`}>
+                                    <Link to="/faq" onClick={this.onClickRedirect}>FAQs</Link>
+                                </li>
                             </ul>
                         ) : (
                             <ul className="dropdown">
-                                <li className={`dropdown__link ${afterClass}`}><Link to="/testimonials">Testimonials</Link></li>
-                                <li className={`dropdown__link ${afterClass}`}><Link to="/faq">FAQs</Link></li>
+                                <li className={`dropdown__link ${afterClass}`}><Link to="/testimonials" onClick={this.onClickRedirect}>Testimonials</Link></li>
+                                <li className={`dropdown__link ${afterClass}`}><Link to="/faq" onClick={this.onClickRedirect}>FAQs</Link></li>
                             </ul>
                         )}
 
                         
                     </li>
-                    <li className={`nav__links--link ${translateClass}`}><Link to="/training">Training</Link></li>
-                    <li className={`nav__links--link ${translateClass}`}><Link to="/">Streaming</Link></li>
-                    <li className={`nav__links--link ${translateClass}`}><Link to="/contact">Contact Us</Link></li>
+                    <li className={`nav__links--link ${translateClass}`}>
+                        <Link to="/training" onClick={this.onClickRedirect}>Training</Link>
+                    </li>
+                    <li className={`nav__links--link ${translateClass}`}>
+                        <Link to="/" onClick={this.onClickRedirect}>Streaming</Link>
+                    </li>
+                    <li className={`nav__links--link ${translateClass}`}>
+                        <Link to="/contact" onClick={this.onClickRedirect}>Contact Us</Link>
+                    </li>
                 </ul>
             </div>
         )

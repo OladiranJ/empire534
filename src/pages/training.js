@@ -27,8 +27,8 @@ const Training = () => {
             <main>
                 <section className="section-small-group">
                     <div className="row">
-                        <div class="u-center-text u-margin-bottom-big">
-                            <h2 class="heading-secondary">
+                        <div className="u-center-text u-margin-bottom-big">
+                            <h2 className="heading-secondary">
                                 Small Group Sessions
                             </h2>
                         </div>
@@ -53,8 +53,8 @@ const Training = () => {
 
                 <section className="section-private">
                     <div className="row">
-                        <div class="u-center-text u-margin-bottom-big">
-                            <h2 class="heading-secondary-white">
+                        <div className="u-center-text u-margin-bottom-big">
+                            <h2 className="heading-secondary-white">
                                 Personal One-on-One Training
                             </h2>
                         </div>
@@ -75,8 +75,8 @@ const Training = () => {
 
                 <section className="section-duo">
                     <div className="row">
-                        <div class="u-center-text u-margin-bottom-big">
-                            <h2 class="heading-secondary">
+                        <div className="u-center-text u-margin-bottom-big">
+                            <h2 className="heading-secondary">
                                 Duo Sessions
                             </h2>
                         </div>
