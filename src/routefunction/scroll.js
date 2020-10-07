@@ -1,6 +1,6 @@
 // Imports
 
-import React, { Component }    from 'react';
+import React    from 'react';
 import { withRouter } from "react-router-dom";
 
 
@@ -8,7 +8,7 @@ import { withRouter } from "react-router-dom";
 
 // Scroll To Top
 
-class ScrollToTop extends Component {
+class ScrollToTop extends React.Component {
 
     componentDidUpdate(prevProps) {
 
