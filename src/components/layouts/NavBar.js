@@ -1,6 +1,7 @@
 // Imports
 
 import React, { Component, createRef }    from 'react';
+import { Link }         from 'react-router-dom'
 
 
 // ----------------------------------------------------------------------------------------------------------------------------------
@@ -92,7 +93,7 @@ class Navbar extends Component {
         return (
             <div className={navBarClass} >
                 <div className="navbar__logo-text">
-                    <a href="/">Empire 534</a>
+                    <Link to="/">Empire 534</Link>
                 </div>
     
                 <input type="checkbox" className="menu__btn" id="menu__btn" checked={menuChecked} onChange={this.onClickMenuCheckbox} />
@@ -115,21 +116,21 @@ class Navbar extends Component {
 
                         {isMobile ? (
                             <ul className="dropdown" style={styleForUl}>
-                                <li className={`dropdown__link ${afterClass}`}><a href="/testimonials">Testimonials</a></li>
-                                <li className={`dropdown__link ${afterClass}`}><a href="/faq">FAQs</a></li>
+                                <li className={`dropdown__link ${afterClass}`}><Link to="/testimonials">Testimonials</Link></li>
+                                <li className={`dropdown__link ${afterClass}`}><Link to="/faq">FAQs</Link></li>
                             </ul>
                         ) : (
                             <ul className="dropdown">
-                                <li className={`dropdown__link ${afterClass}`}><a href="/testimonials">Testimonials</a></li>
-                                <li className={`dropdown__link ${afterClass}`}><a href="/faq">FAQs</a></li>
+                                <li className={`dropdown__link ${afterClass}`}><Link to="/testimonials">Testimonials</Link></li>
+                                <li className={`dropdown__link ${afterClass}`}><Link to="/faq">FAQs</Link></li>
                             </ul>
                         )}
 
                         
                     </li>
-                    <li className={`nav__links--link ${translateClass}`}><a href="/training">Training</a></li>
-                    <li className={`nav__links--link ${translateClass}`}><a href="/">Streaming</a></li>
-                    <li className={`nav__links--link ${translateClass}`}><a href="/contact">Contact Us</a></li>
+                    <li className={`nav__links--link ${translateClass}`}><Link to="/training">Training</Link></li>
+                    <li className={`nav__links--link ${translateClass}`}><Link to="/">Streaming</Link></li>
+                    <li className={`nav__links--link ${translateClass}`}><Link to="/contact">Contact Us</Link></li>
                 </ul>
             </div>
         )

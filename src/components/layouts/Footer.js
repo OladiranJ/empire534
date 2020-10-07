@@ -1,6 +1,7 @@
 // Imports
 
 import React from 'react'
+import { Link }         from 'react-router-dom'
 
 
 
@@ -21,10 +22,10 @@ const Footer = () => {
                 <div className="col-1-of-2">
                     <div className="footer__navigation">
                         <ul className="footer__list">
-                            <li className="footer__item"><a href="/contact" className="footer__link">Contact Us</a></li>
-                            <li className="footer__item"><a href="/privacy" className="footer__link">Privacy Policy</a></li>
-                            <li className="footer__item"><a href="/training" className="footer__link">Training</a></li>
-                            <li className="footer__item"><a href="/" className="footer__link">Streaming</a></li>
+                            <li className="footer__item"><Link to="/contact" className="footer__link">Contact Us</Link></li>
+                            <li className="footer__item"><Link to="/privacy" className="footer__link">Privacy Policy</Link></li>
+                            <li className="footer__item"><Link to="/training" className="footer__link">Training</Link></li>
+                            <li className="footer__item"><Link to="/" className="footer__link">Streaming</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -41,22 +42,22 @@ const Footer = () => {
                     <div className="footer__socials">
                         <ul className="footer__socials-list">
                             <li className="footer__socials-item">
-                                <a href="/" className="footer__socials-link">
+                                <Link to="/" className="footer__socials-link">
                                     <img 
                                         src={require("../../images/colorinsta.png")} 
                                         alt="Empire534 Instagram" 
                                         className="footer__socials-icon"
                                     />
-                                </a>
+                                </Link>
                             </li>
                             <li className="footer__socials-item">
-                                <a href="/" className="footer__socials-link">
+                                <Link to="/" className="footer__socials-link">
                                     <img 
                                         src={require("../../images/colorfacebook.png")} 
                                         alt="Empire534 Facebook" 
                                         className="footer__socials-icon"
                                     />
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

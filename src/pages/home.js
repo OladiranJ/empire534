@@ -3,6 +3,7 @@
 import React    from 'react';
 import Footer   from '../components/layouts/Footer';
 import PhotoCarousel    from '../components/layouts/PhotoCarousel'
+import { Link }         from 'react-router-dom'
 
 
 
@@ -42,7 +43,7 @@ const Home = () => {
                                 We are Empire534.
                             </p>
 
-                            <a href="/training" className="btn-text">Learn more &rarr;</a>
+                            <Link to="/training" className="btn-text">Learn more &rarr;</Link>
                         </div>
 
                         <div className="col-1-of-2">
