@@ -9,6 +9,7 @@ import PrivacyPolicy                              from './pages/privacypolicy';
 import Testimonials                               from './pages/testimonials'
 import Training                                   from './pages/training'
 import NavBar                                     from './components/layouts/NavBar';
+import ScrollToTop                                from './routefunction/scroll';
 
 
 
@@ -23,6 +24,7 @@ class App extends Component {
 
     return (
       <Router>
+        <ScrollToTop>
         <NavBar/>
         <div className="container">
           <Switch>
@@ -34,6 +36,7 @@ class App extends Component {
             <Route exact path="/training" component={Training}/>
           </Switch>
         </div>
+        </ScrollToTop>
       </Router>
     )
 
