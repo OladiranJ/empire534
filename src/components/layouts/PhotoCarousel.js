@@ -31,21 +31,21 @@ class PhotoCarousel extends Component {
                 <div className="carousel__slide">
                     <img 
                         src={require('../../images/dumbells-on-rack-dark.jpg')}
-                        alt="Photo 1"
+                        alt="dumbells"
                         className="carousel__slide-pic"
                     />
                 </div>
                 <div className="carousel__slide">
                     <img 
                         src={require('../../images/man-using-stationary-bike-897064.jpg')}
-                        alt="Photo 2"
+                        alt="bike"
                         className="carousel__slide-pic"
                     />
                 </div>
                 <div className="carousel__slide">
                     <img 
                         src={require('../../images/man-in-black-reebok-shoes-about-to-carry-barbell-949129.jpg')}
-                        alt="Photo 3"
+                        alt="barbell"
                         className="carousel__slide-pic"
                     />
                 </div>
