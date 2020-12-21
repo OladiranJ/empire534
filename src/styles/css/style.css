@@ -186,6 +186,27 @@
         background-position-y: 55%;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%) !important;
         clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%) !important; } }
+  .header__thanks {
+    background-image: linear-gradient(to right bottom, rgba(35, 37, 38, 0.7) 38%, rgba(65, 67, 69, 0.7) 125%), url(../../images/contact-us-medium-1x.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+    @media (max-width: 75em) {
+      .header__thanks {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important; } }
+    @media (max-width: 56.25em) {
+      .header__thanks {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important; } }
+    @media (max-width: 37.5em) {
+      .header__thanks {
+        height: 70vh;
+        background-image: linear-gradient(to right bottom, rgba(35, 37, 38, 0.7) 38%, rgba(65, 67, 69, 0.7) 125%), url(../../images/contact-us-small-1x.jpg);
+        background-position-y: 55%;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important; } }
   @media (max-width: 56.25em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);

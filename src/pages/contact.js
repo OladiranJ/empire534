@@ -29,7 +29,8 @@ const Contact = () => {
                     <div className="row">
                         <div className="book">
                             <div className="book__form">
-                                <form name="contact" method="POST" data-netlify="true" className="form">
+                                <form name="contact" method="POST" data-netlify="true" className="form" action="/thankyou">
+                                    <input type="hidden" name="form-name" value="contact"/>
 
                                     <div className="u-center-text u-margin-bottom-big">
                                         <h2 className="heading-secondary">
@@ -69,7 +70,7 @@ const Contact = () => {
                                     </div>
 
                                     <div className="form__group">
-                                        <button className="btn btn--orange">Submit &rarr;</button>
+                                        <input type="submit" className="btn btn--orange" value="Submit &rarr;"/>
                                     </div>
 
                                 </form>
