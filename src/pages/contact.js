@@ -1,6 +1,6 @@
 // Imports
 
-import React    from 'react';
+import React, { useState }    from 'react';
 import Footer   from '../components/layouts/Footer';
 
 
@@ -10,6 +10,30 @@ import Footer   from '../components/layouts/Footer';
 // Contact Page
 
 const Contact = () => {
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [telNumber, setTelNumber] = useState('');
+    const [message, setMessage] = useState('');
+
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+      }
+
+    const handleSubmit = e => {
+        console.log('here')
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({ "form-name": "contact", firstName, lastName, email, telNumber, message })
+        })
+          .then(() => alert("Success!"))
+          .catch(error => alert(error));
+  
+        e.preventDefault();
+      };
 
     return (
 
@@ -29,7 +53,7 @@ const Contact = () => {
                     <div className="row">
                         <div className="book">
                             <div className="book__form">
-                                <form data-netlify="true" name="contact" method="post" className="form">
+                                <form data-netlify="true" name="contact" method="post" className="form" onSubmit={handleSubmit}>
                                     <input type="hidden" name="form-name" value="contact"/>
 
                                     <div className="u-center-text u-margin-bottom-big">
@@ -39,22 +63,22 @@ const Contact = () => {
                                     </div>
                             
                                     <div className="form__group">
-                                        <input type="text" className="form__input" placeholder="First Name" id="name" required/>
+                                        <input type="text" className="form__input" placeholder="First Name" id="first-name" value={firstName} onChange={(e) => setFirstName(e.target.value)} required/>
                                         <label htmlFor="name" className="form__label">First Name</label>
                                     </div>
 
                                     <div className="form__group">
-                                        <input type="text" className="form__input" placeholder="Last Name" id="name" required/>
-                                        <label htmlFor="name" className="form__label">First Name</label>
+                                        <input type="text" className="form__input" placeholder="Last Name" id="last-name" value={lastName} onChange={(e) => setLastName(e.target.value)} required/>
+                                        <label htmlFor="name" className="form__label">Last Name</label>
                                     </div>
 
                                     <div className="form__group">
-                                        <input type="email" className="form__input" placeholder="Email Address" id="email" required/>
+                                        <input type="email" className="form__input" placeholder="Email Address" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
                                         <label htmlFor="email" className="form__label">Email Address</label>
                                     </div>
 
                                     <div className="form__group">
-                                        <input type="tel" className="form__input" placeholder="Phone Number" id="tel" required/>
+                                        <input type="tel" className="form__input" placeholder="Phone Number" id="tel" value={telNumber} onChange={(e) => setTelNumber(e.target.value)} required/>
                                         <label htmlFor="tel" className="form__label">Phone Number</label>
                                     </div>
 
@@ -64,6 +88,8 @@ const Contact = () => {
                                             placeholder="Type your message here" 
                                             className="form__input form__input-message" 
                                             id="message" 
+                                            value={message}
+                                            onChange={(e) => setMessage(e.target.value)}
                                             required
                                         />
                                         <label htmlFor="message" className="form__label">Message</label>
