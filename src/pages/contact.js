@@ -20,16 +20,26 @@ const Contact = () => {
         return Object.keys(data)
             .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
             .join("&");
-      }
+      };
+
+    const clearForm = () => {
+        setFirstName('');
+        setLastName('');
+        setEmail('');
+        setTelNumber('');
+        setMessage('');
+    };
 
     const handleSubmit = e => {
-        console.log('here')
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: encode({ "form-name": "contact", firstName, lastName, email, telNumber, message })
         })
-          .then(() => alert("Success!"))
+          .then(() => {
+            clearForm();
+            alert("Success!");
+          })
           .catch(error => alert(error));
   
         e.preventDefault();
