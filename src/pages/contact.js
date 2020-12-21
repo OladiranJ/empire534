@@ -29,7 +29,7 @@ const Contact = () => {
                     <div className="row">
                         <div className="book">
                             <div className="book__form">
-                                <form data-netlify="true" name="contact" method="post" className="form" action="/thankyou">
+                                <form data-netlify="true" name="contact" method="post" className="form">
                                     <input type="hidden" name="form-name" value="contact"/>
 
                                     <div className="u-center-text u-margin-bottom-big">
