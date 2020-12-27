@@ -103,7 +103,7 @@ const Testimonials = () => {
                         <div className="story">
                             <figure className="story__shape">
                                 <img 
-                                    src={require("../images/gina-o.png")} 
+                                    src={require("../images/gina-o-2.PNG")} 
                                     alt="Person on a tour" 
                                     className="story__img story__img-5"
                                 />

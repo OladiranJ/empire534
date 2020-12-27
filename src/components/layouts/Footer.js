@@ -15,7 +15,11 @@ const Footer = () => {
 
         <footer className="footer">
             <div className="footer__text-box">
-                <h2 className="footer-primary">Empire534</h2>
+                <img
+                    src={require("../../images/empire534-logo.png")}
+                    alt="Empire534 Footer Logo"
+                    className="footer-primary"
+                />
             </div>
 
             <div className="row">

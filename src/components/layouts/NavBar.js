@@ -99,7 +99,13 @@ class Navbar extends Component {
         return (
             <div className={navBarClass} >
                 <div className="navbar__logo-text">
-                    <Link to="/">Empire 534</Link>
+                    <Link to="/">
+                        <img
+                            src={require("../../images/empire534-logo.png")}
+                            alt="Empire534 Home Icon"
+                            className="home__btn"
+                        />
+                    </Link>
                 </div>
     
                 <input type="checkbox" className="menu__btn" id="menu__btn" checked={menuChecked} onChange={this.onClickMenuCheckbox} />

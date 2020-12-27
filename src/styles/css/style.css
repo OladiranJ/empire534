@@ -240,7 +240,8 @@
   .navbar label {
     text-decoration: none;
     color: #fff;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: 'Bowlby One SC', cursive; }
   .navbar .nav__links {
     display: flex;
     list-style: none;
@@ -303,6 +304,9 @@
         transform: translateY(-0.5rem); }
       .navbar .menu__icon-line::after {
         transform: translateY(0.5rem); }
+  .navbar .home__btn {
+    height: 2rem;
+    width: 2rem; }
   .navbar .menu__btn,
   .navbar .about__btn {
     display: none; }
@@ -484,11 +488,13 @@ body {
 .heading-primary {
   text-transform: uppercase;
   font-weight: 300;
-  color: #fff; }
+  color: #fff;
+  font-size: 5rem;
+  font-family: 'Bowlby One SC', cursive; }
   .heading-primary--main {
     display: block;
     font-size: 6rem;
-    font-weight: 400; }
+    font-weight: 100; }
     @media (max-width: 37.5em) {
       .heading-primary--main {
         font-family: 5rem; } }
@@ -502,8 +508,9 @@ body {
 
 .heading-secondary {
   font-size: 3.5rem;
+  font-family: 'Bowlby One SC', cursive;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 100;
   display: inline-block;
   background-image: linear-gradient(to right, #ff8b5e, #ff4500);
   -webkit-background-clip: text;
@@ -523,6 +530,7 @@ body {
 
 .heading-secondary-white {
   font-size: 3.5rem;
+  font-family: 'Bowlby One SC', cursive;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;

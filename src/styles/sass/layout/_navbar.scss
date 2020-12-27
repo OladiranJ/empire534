@@ -15,6 +15,7 @@
         text-decoration: none;
         color: $color-white;
         text-transform: uppercase;
+        font-family:    'Bowlby One SC', cursive;
     }
 
     .nav__links {
@@ -107,6 +108,11 @@
                 transform: translateY(.5rem);
             }
         }
+    }
+
+    .home__btn {
+        height: 2rem;
+        width: 2rem;
     }
 
     .menu__btn,
